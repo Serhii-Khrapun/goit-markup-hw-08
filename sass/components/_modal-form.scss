@@ -5,7 +5,7 @@
 .modal-form__head {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -64,7 +64,7 @@
   resize: none;
   &::placeholder {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
@@ -89,8 +89,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-color);
   margin-top: 20px;
@@ -127,5 +127,14 @@
   &:hover,
   &:focus {
     background-color: var(--button-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__head {
+    line-height: 1.15;
+  }
+  .modal-form__checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
