@@ -52,26 +52,25 @@
             >
           </li>
         </ul>
-        <button type="button" class="menu-open">
+        <button type="button" class="menu-open" data-menu-open>
           <svg class="open-icon" width="40px" height="40px">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
-          <button class="mobile-menu__btn">
+          <button class="mobile-menu__btn" data-menu-close>
             <svg class="close-btn" width="40px" height="40px">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
           <ul class="nav-list list">
             <li class="nav-list__item">
-              <p class="qwe">bgxhgb</p>
-              <a href="" class="nav-list__link link">Студия</a>
+              <a href="index.html" class="nav-list__link nav-list__link_current link">Студия</a>
             </li>
             <li class="nav-list__item">
-              <a href="" class="nav-list__link link">Портфолио</a>
+              <a href="portfolio.html" class="nav-list__link link">Портфолио</a>
             </li>
             <li class="nav-list__item">
               <a href="" class="nav-list__link link">Контакты</a>
@@ -79,12 +78,12 @@
           </ul>
           <ul class="mobile-contacts list">
             <li class="mobile-contacts__item">
-              <a href="" class="mobile-menu__link link" href="tel:+380961111111"
+              <a href="" class="mobile-menu__tel link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
             <li class="mobile-contacts__item">
-              <a href="" class="mobile-menu__link link" href="mailto:info@devstudio.com"
+              <a href="" class="mobile-menu__mail link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
@@ -571,6 +570,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
