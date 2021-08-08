@@ -37,13 +37,7 @@
   flex-direction: column;
   align-items: center;
 }
-.portfolio__item {
-  max-width: 450px;
-  align-items: center;
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
+
 .portfolio__img_overlay {
   position: relative;
   overflow: hidden;
@@ -81,6 +75,7 @@
 
 .portfolio__card {
   padding: 20px 24px;
+  padding-right: 0px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
@@ -96,6 +91,15 @@
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-color);
+}
+@media screen and (max-width: 767px) {
+  .portfolio__item {
+    max-width: 450px;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -119,6 +123,7 @@
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     width: 370px;
+    margin-bottom: 0;
   }
   .filter {
     display: flex;

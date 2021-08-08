@@ -383,8 +383,11 @@ img {
 
 .mobile-menu__container {
   position: relative;
-  padding-top: 48px;
-  padding-left: 40px;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
 .mobile-menu__btn {
@@ -425,7 +428,7 @@ img {
     color: var(--accent-color);
   }
   .mobile-contacts {
-    margin-top: 302px;
+    margin-top: auto;
   }
   .mobile-contacts__item:not(:last-child) {
     margin-bottom: 32px;
@@ -603,49 +606,52 @@ img {
   background-color: var(--button-color);
 }
 
-.hero-container {
-  max-width: 480px;
-}
-
 .hero {
   background-color: var(--background-color);
   text-align: center;
-  padding: 118px 60px;
+  padding: 118px 0px;
   max-width: 1600px;
-  margin: auto;
+  margin: 0 auto;
   background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero/mobile/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 280px), screen and (min-resolution: 192dpi) and (min-width: 280px), screen and (min-resolution: 2dppx) and (min-width: 280px) {
   .hero {
     background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero/mobile/bg@2x.jpg);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .hero {
     background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero/tablet/bg.jpg);
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
   .hero {
     background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero/tablet/bg@2x.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero/desktop/bg.jpg);
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero/desktop/bg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -1195,15 +1201,6 @@ img {
   align-items: center;
 }
 
-.portfolio__item {
-  max-width: 450px;
-  align-items: center;
-}
-
-.portfolio__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .portfolio__img_overlay {
   position: relative;
   overflow: hidden;
@@ -1244,6 +1241,7 @@ img {
 
 .portfolio__card {
   padding: 20px 24px;
+  padding-right: 0px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
@@ -1261,6 +1259,16 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-color);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__item {
+    max-width: 450px;
+    align-items: center;
+  }
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1284,6 +1292,7 @@ img {
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     width: 370px;
+    margin-bottom: 0;
   }
   .filter {
     display: flex;
