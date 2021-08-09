@@ -154,6 +154,12 @@ img {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -259,6 +265,7 @@ img {
 
 .modal-form__checkbox-label {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-size: 12px;
@@ -653,6 +660,11 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
   }
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 620px;
+  }
 }
 
 .features__container {
@@ -796,6 +808,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--third-color);
 }
 
 .team__subtitle {
@@ -1006,7 +1019,6 @@ img {
   color: var(--third-color);
   margin-top: 60px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .join__list {
