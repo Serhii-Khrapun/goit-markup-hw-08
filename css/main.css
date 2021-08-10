@@ -1152,7 +1152,7 @@ img {
     justify-content: center;
   }
   .join__content {
-    text-align: left;
+    text-align: start;
   }
   .footer-form__container {
     display: flex;
