@@ -1019,6 +1019,7 @@ img {
   color: var(--third-color);
   margin-top: 60px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .join__list {
@@ -1122,6 +1123,7 @@ img {
     align-items: baseline;
   }
   .join__content {
+    text-align: center;
     margin-top: 0;
   }
   .footer-form__text {
@@ -1148,6 +1150,9 @@ img {
     display: flex;
     align-items: baseline;
     justify-content: center;
+  }
+  .join__content {
+    text-align: start;
   }
   .footer-form__container {
     display: flex;
